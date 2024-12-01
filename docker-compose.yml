@@ -1,0 +1,9 @@
+version: "1"
+
+services:
+  app:
+    build:
+      context: .
+    command: make test
+    volumes:
+      - "./app:/app"
