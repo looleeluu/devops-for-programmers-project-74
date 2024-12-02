@@ -1,3 +1,6 @@
+test:
+	NODE_ENV=test npm test -s
+
 setup: install db-migrate
 
 install:
@@ -29,6 +32,3 @@ lint:
 
 lint-fix:
 	npx eslint --fix .
-
-test:
-	NODE_ENV=test npm test -s
