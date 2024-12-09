@@ -13,6 +13,13 @@ jobs:
       - name: checkout repo
         uses: actions/checkout@v3
 
+      - name: Set up environment variables
+        run: |
+          echo "DATABASE_HOST=${{ secrets.DATABASE_HOST }}" >> .env
+          echo "DATABASE_NAME=${{ secrets.DATABASE_NAME }}" >> .env
+          echo "DATABASE_USERNAME=${{ secrets.DATABASE_USERNAME }}" >> .env
+          echo "DATABASE_PASSWORD=${{ secrets.DATABASE_PASSWORD }}" >> .env
+
       - name: make test
         run: |
           make test
