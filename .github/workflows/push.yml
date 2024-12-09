@@ -28,7 +28,7 @@ jobs:
 
       - name: make ci
         run: |
-          make test
+          docker-compose -f docker-compose.yml up --abort-on-container-exit --exit-code-from app
 
       - name: Build and push
         uses: docker/build-push-action@v6
