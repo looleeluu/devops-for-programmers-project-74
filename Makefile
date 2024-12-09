@@ -1,3 +1,6 @@
+setup:
+	docker compose run app make setup
+
 up:
 	docker compose up
 
