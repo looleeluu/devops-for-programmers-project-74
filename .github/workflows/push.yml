@@ -13,9 +13,6 @@ jobs:
       - name: checkout repo
         uses: actions/checkout@v3
 
-      - name: build
-        run: docker compose build app
-
       - name: make test
         run: |
           make test
