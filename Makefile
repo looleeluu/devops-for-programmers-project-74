@@ -1,5 +1,5 @@
 setup:
-	docker compose run app make setup
+	docker compose build app
 
 up:
 	docker compose up
