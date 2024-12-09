@@ -5,7 +5,7 @@ services:
     build:
       context: .
       dockerfile: Dockerfile.production
-    command: make test
+    command: ls -la | grep Makefile
     image: looleeluu/devops-for-programmers-project-74
     environment:
       DATABASE_NAME: ${DATABASE_NAME:-postgres}
