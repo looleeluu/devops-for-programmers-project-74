@@ -7,16 +7,22 @@
 
 ## For start
 
-1. Fill params in `.env.example` and save as `.env`
+1. Save `.env.example` as `.env` with
+
+```
+make prepare-env
+```
+
+and fill params for you db
 
 2. Install deps for app with
 
 ```
-make setup
+make compose-setup
 ```
 
 3. Up container with
 
 ```
-make up
+make compose-up
 ```

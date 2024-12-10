@@ -22,7 +22,7 @@ jobs:
 
       - name: make test
         run: |
-          make test
+          make compose-test
 
   build:
     runs-on: ubuntu-latest
